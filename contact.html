@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Dickson Niyonshuti</title>
+  <meta name="description" content="Get in touch with Dickson Niyonshuti — email, phone, location and contact form.">
+  <meta name="theme-color" content="#07080f">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <script>try{var t=localStorage.getItem("theme");if(t){document.documentElement.setAttribute("data-theme",t);document.documentElement.setAttribute("data-bs-theme",t);}}catch(e){}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="loader"><div class="loader-ring"></div></div>
+  <div class="scroll-progress"></div>
+  <div class="cursor-glow"></div>
+
+  <!-- ===== Navbar ===== -->
+  <header class="nav-wrap">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-glass" aria-label="Main navigation">
+        <a class="navbar-brand" href="index.html"><span class="brand-mark">DN</span><span>Dickson<span class="text-gradient">.</span></span></a>
+        <div class="d-flex align-items-center gap-2 order-lg-3">
+          <button class="theme-toggle" type="button" aria-label="Toggle dark / light theme"><i class="bi bi-sun-fill"></i></button>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation"><i class="bi bi-list fs-4"></i></button>
+        </div>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav mx-auto gap-lg-1">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
+            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+          <a href="contact.html" class="btn btn-grad btn-sm-pill d-none d-lg-inline-block me-2">Hire me <i class="bi bi-arrow-up-right ms-1"></i></a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Page header ===== -->
+    <section class="page-hero">
+      <div class="bg-grid"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+      <div class="container position-relative" style="z-index:1">
+        <span class="eyebrow reveal"><span class="dot"></span>Let's connect</span>
+        <h1 class="reveal d-1">Let's build something <span class="text-gradient">great together</span></h1>
+        <p class="reveal d-2">Whether it's an internship, a project, a question or just a hello — my inbox is always open.</p>
+        <div class="crumbs reveal d-3"><a href="index.html">Home</a><i class="bi bi-chevron-right small"></i><span>Contact</span></div>
+      </div>
+    </section>
+
+    <!-- ===== Contact info ===== -->
+    <section class="pb-5 position-relative" style="z-index:1">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-6 reveal">
+            <div class="glass glass-hover contact-card"><div class="icon-tile"><i class="bi bi-envelope-at"></i></div>
+              <div><h6>University email</h6><a href="mailto:d.niyonshuti@ur.ac.rw">d.niyonshuti@ur.ac.rw</a></div></div>
+          </div>
+          <div class="col-md-6 reveal d-1">
+            <div class="glass glass-hover contact-card"><div class="icon-tile cyan"><i class="bi bi-telephone"></i></div>
+              <div><h6>Phone</h6><a href="tel:+250780000000">+250 780 000 000</a></div></div>
+          </div>
+          <div class="col-md-6 reveal d-2">
+            <div class="glass glass-hover contact-card"><div class="icon-tile pink"><i class="bi bi-geo-alt"></i></div>
+              <div><h6>Location</h6><p>KN 67 St, Nyarugenge<br>Kigali, Rwanda</p></div></div>
+          </div>
+          <div class="col-md-6 reveal d-3">
+            <div class="glass glass-hover contact-card"><div class="icon-tile lime"><i class="bi bi-envelope-paper-heart"></i></div>
+              <div><h6>Personal email</h6><a href="mailto:dicksonniyonshuti58@gmail.com">dicksonniyonshuti58@gmail.com</a></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Form + side panel ===== -->
+    <section class="section pt-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-7 reveal from-left">
+            <div class="glass form-shell">
+              <span class="eyebrow"><i class="bi bi-send"></i>Send a message</span>
+              <h2 class="section-title fs-2">Drop me a line</h2>
+              <p class="text-muted-2 mb-4">Fill in the form and I'll get back to you within 24 hours.</p>
+
+              <form id="contact-form" novalidate data-to="dicksonniyonshuti58@gmail.com">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input type="text" class="form-control" id="name" name="name" placeholder="Full name" required minlength="2" autocomplete="name">
+                      <label for="name"><i class="bi bi-person me-2"></i>Full Name</label>
+                      <div class="invalid-feedback">Please enter your full name.</div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" required autocomplete="email">
+                      <label for="email"><i class="bi bi-envelope me-2"></i>Email Address</label>
+                      <div class="invalid-feedback">Please enter a valid email address.</div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-floating">
+                      <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required minlength="3">
+                      <label for="subject"><i class="bi bi-chat-square-text me-2"></i>Subject</label>
+                      <div class="invalid-feedback">Please add a subject.</div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-floating">
+                      <textarea class="form-control" id="message" name="message" placeholder="Your message" required minlength="10" maxlength="1000"></textarea>
+                      <label for="message"><i class="bi bi-pencil me-2"></i>Message</label>
+                      <div class="invalid-feedback">Your message should be at least 10 characters.</div>
+                    </div>
+                    <div class="char-count" id="char-count">0 / 1000</div>
+                  </div>
+                  <div class="col-12 d-flex flex-wrap align-items-center justify-content-between gap-3 pt-2">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="consent" required>
+                      <label class="form-check-label small text-muted-2" for="consent">I agree to be contacted back by email.</label>
+                      <div class="invalid-feedback">Please tick this box to continue.</div>
+                    </div>
+                    <button type="submit" class="btn btn-grad btn-lg px-5"><i class="bi bi-send-fill me-2"></i>Send Message</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="col-lg-5 d-flex flex-column gap-4">
+            <div class="glass p-4 reveal from-right">
+              <div class="availability mb-4"><span class="dot"></span><div><strong>Currently available</strong><div class="small text-muted-2">Open to internships from January 2027</div></div></div>
+              <h5 class="fw-bold mb-3">Find me online</h5>
+              <div class="d-flex flex-column gap-2 mb-4">
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener" class="glass glass-hover d-flex align-items-center gap-3 p-3"><i class="bi bi-linkedin fs-4" style="color:#0a66c2"></i><div class="flex-grow-1"><strong>LinkedIn</strong><div class="small text-muted-2">linkedin.com/in/dickson-niyonshuti</div></div><i class="bi bi-arrow-up-right"></i></a>
+                <a href="https://github.com/" target="_blank" rel="noopener" class="glass glass-hover d-flex align-items-center gap-3 p-3"><i class="bi bi-github fs-4"></i><div class="flex-grow-1"><strong>GitHub</strong><div class="small text-muted-2">github.com/dickson-niyonshuti</div></div><i class="bi bi-arrow-up-right"></i></a>
+              </div>
+              <div class="socials">
+                <a class="social-btn" href="https://x.com/" target="_blank" rel="noopener" aria-label="X (Twitter)"><i class="bi bi-twitter-x"></i></a>
+                <a class="social-btn" href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                <a class="social-btn" href="https://wa.me/250780000000" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                <a class="social-btn" href="mailto:dicksonniyonshuti58@gmail.com" aria-label="Email"><i class="bi bi-envelope"></i></a>
+              </div>
+            </div>
+            <div class="accordion accordion-glass reveal from-right d-1" id="faq">
+              <div class="accordion-item">
+                <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q1">How fast do you reply?</button></h2>
+                <div id="q1" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body">Usually within 24 hours on weekdays, a bit longer during exam periods.</div></div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q2">Do you take freelance work?</button></h2>
+                <div id="q2" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body">Yes — small websites, landing pages and UI redesigns that fit around my studies.</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== Map ===== -->
+        <div class="mt-5 reveal zoom">
+          <div class="d-flex flex-wrap justify-content-between align-items-end gap-3 mb-4">
+            <div><span class="eyebrow"><i class="bi bi-pin-map"></i>Where to find me</span><h2 class="section-title fs-2 mb-0">Kigali, Rwanda</h2></div>
+            <a class="link-arrow" href="https://maps.google.com/?q=Kigali,Rwanda" target="_blank" rel="noopener">Open in Google Maps <i class="bi bi-arrow-up-right"></i></a>
+          </div>
+          <div class="map-shell">
+            <iframe title="Map showing Kigali, Rwanda" src="https://www.google.com/maps?q=University+of+Rwanda+College+of+Science+and+Technology,Kigali&z=14&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Toast ===== -->
+  <div class="toast-container position-fixed bottom-0 start-50 translate-middle-x p-3" style="z-index:1090">
+    <div id="form-toast" class="toast toast-glass" role="status" aria-live="polite" aria-atomic="true">
+      <div class="toast-header"><i class="bi bi-check-circle-fill text-success me-2"></i><strong class="me-auto">Message ready!</strong><button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button></div>
+      <div class="toast-body">Your email app has opened with the message filled in — just hit send. Thank you!</div>
+    </div>
+  </div>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4 g-lg-5">
+        <div class="col-lg-5">
+          <a class="navbar-brand mb-3" href="index.html"><span class="brand-mark">DN</span><span>Dickson<span class="text-gradient">.</span></span></a>
+          <p class="text-muted-2 mt-3" style="max-width:360px">Software Engineering student building modern, responsive and human-centred web experiences from Kigali, Rwanda.</p>
+          <div class="socials mt-4">
+            <a class="social-btn" href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+            <a class="social-btn" href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a class="social-btn" href="https://x.com/" target="_blank" rel="noopener" aria-label="X (Twitter)"><i class="bi bi-twitter-x"></i></a>
+            <a class="social-btn" href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h6>Quick links</h6>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-4">
+          <h6>Say hello</h6>
+          <ul class="footer-links">
+            <li><a href="mailto:dicksonniyonshuti58@gmail.com"><i class="bi bi-envelope me-2"></i>Email me</a></li>
+            <li><a href="tel:+250780000000"><i class="bi bi-telephone me-2"></i>+250 780 000 000</a></li>
+            <li><span class="text-muted-2"><i class="bi bi-geo-alt me-2"></i>Kigali, Rwanda</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-big">DICKSON NIYONSHUTI</div>
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between gap-2">
+        <span>&copy; <span data-year>2026</span> Dickson Niyonshuti. All rights reserved.</span>
+        <span>Built with <i class="bi bi-heart-fill" style="color:var(--pink)"></i> using HTML5, CSS3 &amp; Bootstrap 5</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
