@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery — Dickson Niyonshuti</title>
+  <meta name="description" content="Self-motivation video and photo gallery of Dickson Niyonshuti — campus life, workshops and projects.">
+  <meta name="theme-color" content="#07080f">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <script>try{var t=localStorage.getItem("theme");if(t){document.documentElement.setAttribute("data-theme",t);document.documentElement.setAttribute("data-bs-theme",t);}}catch(e){}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="loader"><div class="loader-ring"></div></div>
+  <div class="scroll-progress"></div>
+  <div class="cursor-glow"></div>
+
+  <!-- ===== Navbar ===== -->
+  <header class="nav-wrap">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-glass" aria-label="Main navigation">
+        <a class="navbar-brand" href="index.html"><span class="brand-mark">DN</span><span>Dickson<span class="text-gradient">.</span></span></a>
+        <div class="d-flex align-items-center gap-2 order-lg-3">
+          <button class="theme-toggle" type="button" aria-label="Toggle dark / light theme"><i class="bi bi-sun-fill"></i></button>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation"><i class="bi bi-list fs-4"></i></button>
+        </div>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav mx-auto gap-lg-1">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
+            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+          <a href="contact.html" class="btn btn-grad btn-sm-pill d-none d-lg-inline-block me-2">Hire me <i class="bi bi-arrow-up-right ms-1"></i></a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Page header ===== -->
+    <section class="page-hero">
+      <div class="bg-grid"></div>
+      <div class="blob blob-1"></div>
+      <div class="blob blob-3"></div>
+      <div class="container position-relative" style="z-index:1">
+        <span class="eyebrow reveal"><i class="bi bi-camera-reels"></i>Gallery</span>
+        <h1 class="reveal d-1">Moments, media &amp; <span class="text-gradient">milestones</span></h1>
+        <p class="reveal d-2">Hear my story in my own words, then explore snapshots from campus, workshops and the projects I've built.</p>
+        <div class="crumbs reveal d-3"><a href="index.html">Home</a><i class="bi bi-chevron-right small"></i><span>Gallery</span></div>
+      </div>
+    </section>
+
+    <!-- ===== Self-motivation video ===== -->
+    <section class="section pt-4">
+      <div class="container">
+        <div class="row g-4 g-lg-5 align-items-center">
+          <div class="col-lg-8 reveal zoom">
+            <figure class="m-0">
+              <div class="video-shell">
+                <div class="video-inner">
+                  <!-- Replace assets/video/motivation.mp4 with your own recording.
+                       Prefer YouTube? Swap this <video> for:
+                       <div class="ratio ratio-16x9"><iframe src="https://www.youtube.com/embed/VIDEO_ID" title="My motivation" allowfullscreen></iframe></div> -->
+                  <video id="motivation-video" class="w-100" controls preload="metadata" playsinline poster="assets/img/video-poster.svg" aria-describedby="video-caption">
+                    <source src="assets/video/motivation.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                  </video>
+                  <div class="video-fallback" role="note">
+                    <div class="play-ring"><i class="bi bi-camera-video"></i></div>
+                    <h4 class="fw-bold mb-0">Self-motivation video</h4>
+                    <p class="mb-0 opacity-75">Add your recording as <code>assets/video/motivation.mp4</code> and it will play here.</p>
+                  </div>
+                </div>
+              </div>
+              <figcaption class="video-caption" id="video-caption">
+                <span class="eyebrow"><span class="dot"></span>Featured video</span>
+                <h3 class="fw-bold mt-3 mb-1">Why I chose Software Engineering</h3>
+                <p class="text-muted-2 mb-0">In this short video I share what first drew me to technology, why I'm pursuing a degree in Software Engineering, and the impact I hope to make in my community.</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-lg-4">
+            <div class="glass quote-card reveal from-right">
+              <i class="bi bi-quote"></i>
+              <p class="fs-5 fw-medium mt-2">Technology is the most powerful tool my generation has to solve Africa's biggest challenges — and I want to be one of the people building it.</p>
+              <div class="d-flex align-items-center gap-3 mt-4">
+                <img src="assets/img/profile.svg" alt="" width="48" height="48" class="rounded-circle" style="object-fit:cover">
+                <div><strong>Dickson Niyonshuti</strong><div class="small text-muted-2">Software Engineering student</div></div>
+              </div>
+            </div>
+            <div class="row g-3 mt-1">
+              <div class="col-6 reveal d-1"><div class="glass p-3 text-center"><div class="display-font fs-3 fw-bold text-gradient">3 min</div><div class="small text-muted-2">Video length</div></div></div>
+              <div class="col-6 reveal d-2"><div class="glass p-3 text-center"><div class="display-font fs-3 fw-bold text-gradient">HD</div><div class="small text-muted-2">1080p quality</div></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Photo gallery ===== -->
+    <section class="section pt-0">
+      <div class="container">
+        <div class="text-center mb-4">
+          <span class="eyebrow reveal"><i class="bi bi-images"></i>Photo gallery</span>
+          <h2 class="section-title reveal d-1">Snapshots of my <span class="text-gradient">journey</span></h2>
+          <p class="section-lead mx-auto reveal d-2">Click any photo to view it full-size. Use the filters to browse by category.</p>
+        </div>
+        <div class="text-center mb-5 reveal d-3">
+          <div class="filter-bar" role="group" aria-label="Filter gallery">
+            <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+            <button class="filter-btn" data-filter="personal" aria-pressed="false">Personal</button>
+            <button class="filter-btn" data-filter="campus" aria-pressed="false">Campus</button>
+            <button class="filter-btn" data-filter="workshops" aria-pressed="false">Workshops</button>
+            <button class="filter-btn" data-filter="projects" aria-pressed="false">Projects</button>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-sm-6 col-lg-4 g-item reveal" data-cat="personal">
+            <figure class="g-card m-0" tabindex="0"><img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&h=600&q=80" data-full="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1600&h=1200&q=80" alt="Laptop with code editor open on a desk" loading="lazy"><span class="g-zoom"><i class="bi bi-arrows-angle-expand"></i></span>
+              <figcaption class="g-overlay"><span class="cat">Personal</span><h5>My coding setup</h5><p>Where the magic happens — VS Code, coffee and a lot of curiosity.</p></figcaption></figure>
+          </div>
+          <div class="col-sm-6 col-lg-4 g-item reveal d-1" data-cat="campus">
+            <figure class="g-card m-0" tabindex="0"><img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&h=600&q=80" data-full="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1600&h=1200&q=80" alt="University library study session" loading="lazy"><span class="g-zoom"><i class="bi bi-arrows-angle-expand"></i></span>
+              <figcaption class="g-overlay"><span class="cat">Campus</span><h5>Late nights at the library</h5><p>Exam season study group with classmates from the Software Engineering cohort.</p></figcaption></figure>
+          </div>
+          <div class="col-sm-6 col-lg-4 g-item reveal d-2" data-cat="workshops">
+            <figure class="g-card m-0" tabindex="0"><img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&h=600&q=80" data-full="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1600&h=1200&q=80" alt="Team working at a hackathon" loading="lazy"><span class="g-zoom"><i class="bi bi-arrows-angle-expand"></i></span>
+              <figcaption class="g-overlay"><span class="cat">Workshops</span><h5>Kigali Innovation Hackathon</h5><p>48 hours, five teammates and one prototype that made it to the finals.</p></figcaption></figure>
+          </div>
+          <div class="col-sm-6 col-lg-4 g-item reveal" data-cat="projects">
+            <figure class="g-card m-0" tabindex="0"><img src="https://images.unsplash.com/photo-1488459716781-31db52582fe9?auto=format&fit=crop&w=800&h=600&q=80" data-full="https://images.unsplash.com/photo-1488459716781-31db52582fe9?auto=format&fit=crop&w=1600&h=1200&q=80" alt="AgriLink marketplace screenshot" loading="lazy"><span class="g-zoom"><i class="bi bi-arrows-angle-expand"></i></span>
+              <figcaption class="g-overlay"><span class="cat">Projects</span><h5>AgriLink Marketplace</h5><p>Home page of the farmer-to-buyer marketplace built with Bootstrap.</p></figcaption></figure>
+          </div>
+          <div class="col-sm-6 col-lg-4 g-item reveal d-1" data-cat="workshops">
+            <figure class="g-card m-0" tabindex="0"><img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&h=600&q=80" data-full="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1600&h=1200&q=80" alt="UI/UX design workshop" loading="lazy"><span class="g-zoom"><i class="bi bi-arrows-angle-expand"></i></span>
+              <figcaption class="g-overlay"><span class="cat">Workshops</span><h5>UI/UX design bootcamp</h5><p>A week-long Figma workshop on wireframing, prototyping and usability testing.</p></figcaption></figure>
+          </div>
+          <div class="col-sm-6 col-lg-4 g-item reveal d-2" data-cat="campus">
+            <figure class="g-card m-0" tabindex="0"><img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=800&h=600&q=80" data-full="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1600&h=1200&q=80" alt="Tech club meetup on campus" loading="lazy"><span class="g-zoom"><i class="bi bi-arrows-angle-expand"></i></span>
+              <figcaption class="g-overlay"><span class="cat">Campus</span><h5>Tech club meetup</h5><p>Presenting a talk on responsive design to first-year students.</p></figcaption></figure>
+          </div>
+          <div class="col-sm-6 col-lg-4 g-item reveal" data-cat="personal">
+            <figure class="g-card m-0" tabindex="0"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&h=600&q=80" data-full="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&h=1200&q=80" alt="Landscape photo of hills" loading="lazy"><span class="g-zoom"><i class="bi bi-arrows-angle-expand"></i></span>
+              <figcaption class="g-overlay"><span class="cat">Personal</span><h5>Weekend photography</h5><p>One of my favourite shots from a hike outside Kigali.</p></figcaption></figure>
+          </div>
+          <div class="col-sm-6 col-lg-4 g-item reveal d-1" data-cat="projects">
+            <figure class="g-card m-0" tabindex="0"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&h=600&q=80" data-full="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1600&h=1200&q=80" alt="Smart Budget tracker dashboard" loading="lazy"><span class="g-zoom"><i class="bi bi-arrows-angle-expand"></i></span>
+              <figcaption class="g-overlay"><span class="cat">Projects</span><h5>Smart Budget Tracker</h5><p>Dashboard view with monthly spending charts and category breakdowns.</p></figcaption></figure>
+          </div>
+          <div class="col-sm-6 col-lg-4 g-item reveal d-2" data-cat="campus">
+            <figure class="g-card m-0" tabindex="0"><img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=800&h=600&q=80" data-full="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=1600&h=1200&q=80" alt="Award ceremony on campus" loading="lazy"><span class="g-zoom"><i class="bi bi-arrows-angle-expand"></i></span>
+              <figcaption class="g-overlay"><span class="cat">Campus</span><h5>Dean's List ceremony</h5><p>Receiving academic recognition for the 2024–2025 year.</p></figcaption></figure>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Lightbox ===== -->
+  <div class="modal fade lightbox" id="lightbox" tabindex="-1" aria-label="Image viewer" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="position-relative">
+          <button type="button" class="lb-btn lb-close" data-bs-dismiss="modal" aria-label="Close" style="transform:none"><i class="bi bi-x-lg"></i></button>
+          <button type="button" class="lb-btn lb-prev" aria-label="Previous image"><i class="bi bi-chevron-left"></i></button>
+          <img id="lb-img" src="" alt="">
+          <button type="button" class="lb-btn lb-next" aria-label="Next image"><i class="bi bi-chevron-right"></i></button>
+        </div>
+        <div class="lb-caption"><h5 id="lb-title" class="fw-bold mb-1"></h5><p id="lb-desc"></p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4 g-lg-5">
+        <div class="col-lg-5">
+          <a class="navbar-brand mb-3" href="index.html"><span class="brand-mark">DN</span><span>Dickson<span class="text-gradient">.</span></span></a>
+          <p class="text-muted-2 mt-3" style="max-width:360px">Software Engineering student building modern, responsive and human-centred web experiences from Kigali, Rwanda.</p>
+          <div class="socials mt-4">
+            <a class="social-btn" href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+            <a class="social-btn" href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a class="social-btn" href="https://x.com/" target="_blank" rel="noopener" aria-label="X (Twitter)"><i class="bi bi-twitter-x"></i></a>
+            <a class="social-btn" href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h6>Quick links</h6>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-4">
+          <h6>Say hello</h6>
+          <ul class="footer-links">
+            <li><a href="mailto:dicksonniyonshuti58@gmail.com"><i class="bi bi-envelope me-2"></i>Email me</a></li>
+            <li><a href="tel:+250780000000"><i class="bi bi-telephone me-2"></i>+250 780 000 000</a></li>
+            <li><span class="text-muted-2"><i class="bi bi-geo-alt me-2"></i>Kigali, Rwanda</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-big">DICKSON NIYONSHUTI</div>
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between gap-2">
+        <span>&copy; <span data-year>2026</span> Dickson Niyonshuti. All rights reserved.</span>
+        <span>Built with <i class="bi bi-heart-fill" style="color:var(--pink)"></i> using HTML5, CSS3 &amp; Bootstrap 5</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
