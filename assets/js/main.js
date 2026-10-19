@@ -1,7 +1,3 @@
-/* =========================================================
-   Portfolio interactions — vanilla JS, no dependencies
-   besides Bootstrap's bundle (for modal / toast / collapse).
-   ========================================================= */
 (function () {
   "use strict";
 
@@ -9,10 +5,9 @@
   const $$ = (sel, ctx = document) => Array.from(ctx.querySelectorAll(sel));
   const store = {
     get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
-    set(k, v) { try { localStorage.setItem(k, v); } catch (e) { /* storage blocked */ } }
+    set(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
   };
 
-  /* ---------- Theme (dark / light) ---------- */
   const root = document.documentElement;
   const applyTheme = (t) => {
     root.setAttribute("data-theme", t);
@@ -28,15 +23,12 @@
     store.set("theme", next);
   }));
 
-  /* ---------- Loader ---------- */
   window.addEventListener("load", () => {
     const l = $(".loader");
     if (l) setTimeout(() => l.classList.add("hidden"), 250);
   });
-  // Safety net if "load" is slow (e.g. remote images)
   setTimeout(() => { const l = $(".loader"); if (l) l.classList.add("hidden"); }, 2500);
 
-  /* ---------- Active nav link ---------- */
   const page = (location.pathname.split("/").pop() || "index.html").toLowerCase();
   $$(".navbar .nav-link").forEach((a) => {
     const href = (a.getAttribute("href") || "").toLowerCase();
@@ -46,7 +38,6 @@
     }
   });
 
-  /* ---------- Scroll effects: nav shrink, progress bar, back-to-top ---------- */
   const navWrap = $(".nav-wrap");
   const progress = $(".scroll-progress");
   const toTop = $(".to-top");
@@ -61,13 +52,11 @@
   onScroll();
   if (toTop) toTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
 
-  // Close mobile menu after picking a link
   $$(".navbar-collapse .nav-link").forEach((a) => a.addEventListener("click", () => {
     const c = $(".navbar-collapse.show");
     if (c && window.bootstrap) bootstrap.Collapse.getOrCreateInstance(c).hide();
   }));
 
-  /* ---------- Cursor glow + card spotlight ---------- */
   const glow = $(".cursor-glow");
   if (glow && window.matchMedia("(hover: hover)").matches) {
     window.addEventListener("mousemove", (e) => {
@@ -81,7 +70,6 @@
     card.style.setProperty("--my", e.clientY - r.top + "px");
   }));
 
-  /* ---------- Reveal on scroll + counters + progress bars ---------- */
   const animateCount = (el) => {
     const target = parseFloat(el.dataset.count);
     const suffix = el.dataset.suffix || "";
@@ -117,7 +105,6 @@
     }
   });
 
-  /* ---------- Typed roles (hero) ---------- */
   const typed = $(".typed");
   if (typed) {
     const words = JSON.parse(typed.dataset.words || "[]");
@@ -133,10 +120,8 @@
     if (words.length) tick();
   }
 
-  /* ---------- Year in footer ---------- */
   $$("[data-year]").forEach((el) => { el.textContent = new Date().getFullYear(); });
 
-  /* ---------- Gallery: filter ---------- */
   const filterBtns = $$(".filter-btn");
   const items = $$(".g-item");
   filterBtns.forEach((btn) => btn.addEventListener("click", () => {
@@ -151,7 +136,6 @@
     });
   }));
 
-  /* ---------- Gallery: lightbox ---------- */
   const lbEl = $("#lightbox");
   if (lbEl && window.bootstrap) {
     const lb = new bootstrap.Modal(lbEl);
@@ -183,7 +167,6 @@
     });
   }
 
-  /* ---------- Video: friendly fallback until the real file is added ---------- */
   const video = $("#motivation-video");
   if (video) {
     const fb = $(".video-fallback");
@@ -191,11 +174,9 @@
     const source = $("source", video);
     if (source) source.addEventListener("error", showFallback);
     video.addEventListener("error", showFallback);
-    // networkState 3 = NETWORK_NO_SOURCE
     setTimeout(() => { if (video.networkState === 3) showFallback(); }, 1200);
   }
 
-  /* ---------- Contact form ---------- */
   const form = $("#contact-form");
   if (form) {
     const msg = $("#message"), counter = $("#char-count"), max = parseInt(msg.getAttribute("maxlength"), 10);
@@ -217,8 +198,6 @@
       btn.disabled = true;
       btn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Sending…';
 
-      // GitHub Pages is static, so the message is handed to the visitor's
-      // email app, pre-filled, addressed to the portfolio owner.
       setTimeout(() => {
         const to = form.dataset.to;
         const body = `${data.message}\n\n— ${data.name} (${data.email})`;
