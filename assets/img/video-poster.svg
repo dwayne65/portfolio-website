@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#160f3a"/>
+      <stop offset=".6" stop-color="#0a1830"/>
+      <stop offset="1" stop-color="#2a0f2e"/>
+    </linearGradient>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8b5cf6"/>
+      <stop offset=".55" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#f472b6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="300" cy="150" r="380" fill="#8b5cf6" opacity=".25"/>
+  <circle cx="1350" cy="780" r="360" fill="#22d3ee" opacity=".18"/>
+  <circle cx="800" cy="410" r="110" fill="url(#g)"/>
+  <path d="M770 355v110l90-55z" fill="#fff"/>
+  <text x="800" y="620" text-anchor="middle" font-family="Space Grotesk, Arial, sans-serif" font-size="58" font-weight="700" fill="#fff">Why I chose Software Engineering</text>
+  <text x="800" y="680" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="30" fill="#c7cbe6">A short story by Dickson Niyonshuti</text>
+</svg>
