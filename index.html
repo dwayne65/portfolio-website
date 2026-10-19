@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dickson Niyonshuti — Portfolio</title>
+  <meta name="description" content="Personal portfolio of Dickson Niyonshuti — software engineering student, web developer and problem solver based in Kigali, Rwanda.">
+  <meta name="theme-color" content="#07080f">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <script>try{var t=localStorage.getItem("theme");if(t){document.documentElement.setAttribute("data-theme",t);document.documentElement.setAttribute("data-bs-theme",t);}}catch(e){}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="loader"><div class="loader-ring"></div></div>
+  <div class="scroll-progress"></div>
+  <div class="cursor-glow"></div>
+
+  <!-- ===== Navbar ===== -->
+  <header class="nav-wrap">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-glass" aria-label="Main navigation">
+        <a class="navbar-brand" href="index.html"><span class="brand-mark">DN</span><span>Dickson<span class="text-gradient">.</span></span></a>
+        <div class="d-flex align-items-center gap-2 order-lg-3">
+          <button class="theme-toggle" type="button" aria-label="Toggle dark / light theme"><i class="bi bi-sun-fill"></i></button>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation"><i class="bi bi-list fs-4"></i></button>
+        </div>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav mx-auto gap-lg-1">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
+            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+          <a href="contact.html" class="btn btn-grad btn-sm-pill d-none d-lg-inline-block me-2">Hire me <i class="bi bi-arrow-up-right ms-1"></i></a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Hero ===== -->
+    <section class="hero">
+      <div class="bg-grid"></div>
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+      <div class="container position-relative" style="z-index:1">
+        <div class="row align-items-center g-4 g-lg-5">
+          <div class="col-lg-7">
+            <span class="eyebrow reveal"><span class="dot"></span>Available for internships &amp; collaborations</span>
+            <h1 class="hero-title reveal d-1">Hi, I'm <span class="text-gradient">Dickson</span>.<br>I build things for the web.</h1>
+            <p class="hero-sub reveal d-2">A passionate <span class="typed" data-words='["Software Engineering student","Front-end developer","UI/UX enthusiast","Problem solver"]'></span><br>turning ideas into fast, accessible and beautiful digital experiences — one line of code at a time.</p>
+            <div class="d-flex flex-wrap gap-3 mt-4 cta-row reveal d-3">
+              <a href="about.html" class="btn btn-grad">Learn More About Me <i class="bi bi-arrow-right ms-1"></i></a>
+              <a href="contact.html" class="btn btn-ghost"><i class="bi bi-chat-dots me-2"></i>Get In Touch</a>
+            </div>
+            <div class="hero-stats reveal d-4">
+              <div><div class="num text-gradient" data-count="12" data-suffix="+">0</div><div class="lbl">Projects built</div></div>
+              <div><div class="num text-gradient" data-count="3" data-suffix="">0</div><div class="lbl">Years of study</div></div>
+              <div><div class="num text-gradient" data-count="8" data-suffix="+">0</div><div class="lbl">Technologies</div></div>
+            </div>
+          </div>
+          <div class="col-lg-5 reveal zoom d-2">
+            <div class="hero-visual">
+              <div class="orbit">
+                <span class="planet p1"><i class="bi bi-filetype-html"></i></span>
+                <span class="planet p2"><i class="bi bi-bootstrap-fill"></i></span>
+                <span class="planet p3"><i class="bi bi-filetype-js"></i></span>
+              </div>
+              <div class="orbit orbit-2">
+                <span class="planet p4"><i class="bi bi-filetype-css"></i></span>
+                <span class="planet p5"><i class="bi bi-github"></i></span>
+              </div>
+              <div class="hero-photo"><img src="assets/img/profile.svg" alt="Portrait of Dickson Niyonshuti"></div>
+              <div class="float-badge b1"><i class="bi bi-mortarboard-fill text-info"></i> BSc Software Eng.</div>
+              <div class="float-badge b2"><i class="bi bi-geo-alt-fill" style="color:var(--pink)"></i> Kigali, Rwanda</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#highlights" class="scroll-cue d-none d-md-block" aria-label="Scroll to highlights"></a>
+    </section>
+
+    <!-- ===== Tech marquee ===== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span class="marquee-item"><i class="bi bi-filetype-html"></i>HTML5</span>
+        <span class="marquee-item"><i class="bi bi-filetype-css"></i>CSS3</span>
+        <span class="marquee-item"><i class="bi bi-bootstrap"></i>Bootstrap 5</span>
+        <span class="marquee-item"><i class="bi bi-filetype-js"></i>JavaScript</span>
+        <span class="marquee-item"><i class="bi bi-git"></i>Git &amp; GitHub</span>
+        <span class="marquee-item"><i class="bi bi-filetype-py"></i>Python</span>
+        <span class="marquee-item"><i class="bi bi-database"></i>SQL</span>
+        <span class="marquee-item"><i class="bi bi-palette"></i>Figma</span>
+        <!-- duplicated for a seamless loop -->
+        <span class="marquee-item"><i class="bi bi-filetype-html"></i>HTML5</span>
+        <span class="marquee-item"><i class="bi bi-filetype-css"></i>CSS3</span>
+        <span class="marquee-item"><i class="bi bi-bootstrap"></i>Bootstrap 5</span>
+        <span class="marquee-item"><i class="bi bi-filetype-js"></i>JavaScript</span>
+        <span class="marquee-item"><i class="bi bi-git"></i>Git &amp; GitHub</span>
+        <span class="marquee-item"><i class="bi bi-filetype-py"></i>Python</span>
+        <span class="marquee-item"><i class="bi bi-database"></i>SQL</span>
+        <span class="marquee-item"><i class="bi bi-palette"></i>Figma</span>
+      </div>
+    </div>
+
+    <!-- ===== Highlights (bento) ===== -->
+    <section class="section" id="highlights">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="eyebrow reveal"><i class="bi bi-stars"></i>Quick overview</span>
+          <h2 class="section-title reveal d-1">A snapshot of <span class="text-gradient">who I am</span></h2>
+          <p class="section-lead mx-auto reveal d-2">What I'm good at, what I'm studying and what I'm proud of — at a glance.</p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Core skills -->
+          <div class="col-lg-5 reveal">
+            <div class="glass glass-hover bento">
+              <div class="icon-tile"><i class="bi bi-code-slash"></i></div>
+              <h3>Core skills</h3>
+              <p>I craft responsive, accessible interfaces and love clean, well-structured code.</p>
+              <div class="d-flex flex-wrap gap-2 mt-4">
+                <span class="chip"><i class="bi bi-filetype-html"></i>HTML5</span>
+                <span class="chip"><i class="bi bi-filetype-css"></i>CSS3</span>
+                <span class="chip"><i class="bi bi-bootstrap"></i>Bootstrap</span>
+                <span class="chip"><i class="bi bi-filetype-js"></i>JavaScript</span>
+                <span class="chip"><i class="bi bi-phone"></i>Responsive design</span>
+                <span class="chip"><i class="bi bi-git"></i>Git</span>
+                <span class="chip"><i class="bi bi-universal-access"></i>Accessibility</span>
+              </div>
+            </div>
+          </div>
+          <!-- Current program -->
+          <div class="col-md-6 col-lg-4 reveal d-1">
+            <div class="glass glass-hover bento study-card">
+              <div class="icon-tile cyan"><i class="bi bi-mortarboard"></i></div>
+              <h3>Currently studying</h3>
+              <div class="big mt-2">BSc in<br><span class="text-gradient">Software Engineering</span></div>
+              <p class="mt-2">University of Rwanda · Year 3</p>
+              <div class="d-flex justify-content-between small mt-4 mb-2"><span class="text-muted-2">Degree progress</span><span class="fw-semibold">75%</span></div>
+              <div class="mini-progress"><span data-width="75"></span></div>
+            </div>
+          </div>
+          <!-- Achievements -->
+          <div class="col-md-6 col-lg-3 reveal d-2">
+            <div class="glass glass-hover bento">
+              <div class="icon-tile pink"><i class="bi bi-trophy"></i></div>
+              <h3>Achievements</h3>
+              <div class="achv"><i class="bi bi-patch-check-fill"></i><div><strong>Dean's List</strong><div class="small text-muted-2">2024 – 2025</div></div></div>
+              <div class="achv"><i class="bi bi-patch-check-fill"></i><div><strong>Hackathon finalist</strong><div class="small text-muted-2">Kigali Innovation Week</div></div></div>
+              <div class="achv"><i class="bi bi-patch-check-fill"></i><div><strong>Google UX cert.</strong><div class="small text-muted-2">Coursera</div></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Featured projects -->
+        <div class="d-flex flex-wrap justify-content-between align-items-end gap-3 mt-5 pt-4 mb-4">
+          <div>
+            <span class="eyebrow reveal"><i class="bi bi-rocket-takeoff"></i>Featured work</span>
+            <h2 class="section-title reveal d-1 mb-0">Projects I'm proud of</h2>
+          </div>
+          <a href="gallery.html" class="link-arrow reveal">See the gallery <i class="bi bi-arrow-right"></i></a>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4 reveal">
+            <article class="glass glass-hover project-card">
+              <div class="project-thumb"><img src="https://images.unsplash.com/photo-1488459716781-31db52582fe9?auto=format&fit=crop&w=800&h=500&q=80" alt="Screenshot of the AgriLink marketplace app" loading="lazy"><span class="tag">Web App</span></div>
+              <div class="project-body">
+                <h4>AgriLink Marketplace</h4>
+                <p>A responsive marketplace connecting local farmers to buyers, with product listings, search and order tracking.</p>
+                <div class="d-flex flex-wrap gap-2 mb-3"><span class="chip">HTML</span><span class="chip">Bootstrap</span><span class="chip">JS</span></div>
+                <a href="gallery.html" class="link-arrow">View project <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal d-1">
+            <article class="glass glass-hover project-card">
+              <div class="project-thumb"><img src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&w=800&h=500&q=80" alt="Screenshot of the Campus Events portal" loading="lazy"><span class="tag">UI/UX</span></div>
+              <div class="project-body">
+                <h4>Campus Events Portal</h4>
+                <p>A clean events hub for student clubs — browse, filter and RSVP to activities happening around campus.</p>
+                <div class="d-flex flex-wrap gap-2 mb-3"><span class="chip">Figma</span><span class="chip">CSS Grid</span><span class="chip">A11y</span></div>
+                <a href="gallery.html" class="link-arrow">View project <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal d-2">
+            <article class="glass glass-hover project-card">
+              <div class="project-thumb"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&h=500&q=80" alt="Screenshot of the Smart Budget tracker dashboard" loading="lazy"><span class="tag">Dashboard</span></div>
+              <div class="project-body">
+                <h4>Smart Budget Tracker</h4>
+                <p>A personal finance dashboard with charts, categories and monthly summaries to help students manage spending.</p>
+                <div class="d-flex flex-wrap gap-2 mb-3"><span class="chip">JavaScript</span><span class="chip">Chart.js</span><span class="chip">LocalStorage</span></div>
+                <a href="gallery.html" class="link-arrow">View project <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="pb-5 mb-5 position-relative" style="z-index:1">
+      <div class="container">
+        <div class="cta-band reveal zoom">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-8">
+              <h2>Have a project or an opportunity in mind?</h2>
+              <p class="mb-0 fs-5">I'm always open to internships, freelance work and exciting collaborations.</p>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+              <a href="contact.html" class="btn btn-white">Let's talk <i class="bi bi-send ms-1"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4 g-lg-5">
+        <div class="col-lg-5">
+          <a class="navbar-brand mb-3" href="index.html"><span class="brand-mark">DN</span><span>Dickson<span class="text-gradient">.</span></span></a>
+          <p class="text-muted-2 mt-3" style="max-width:360px">Software Engineering student building modern, responsive and human-centred web experiences from Kigali, Rwanda.</p>
+          <div class="socials mt-4">
+            <a class="social-btn" href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+            <a class="social-btn" href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a class="social-btn" href="https://x.com/" target="_blank" rel="noopener" aria-label="X (Twitter)"><i class="bi bi-twitter-x"></i></a>
+            <a class="social-btn" href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h6>Quick links</h6>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-4">
+          <h6>Say hello</h6>
+          <ul class="footer-links">
+            <li><a href="mailto:dicksonniyonshuti58@gmail.com"><i class="bi bi-envelope me-2"></i>Email me</a></li>
+            <li><a href="tel:+250780000000"><i class="bi bi-telephone me-2"></i>+250 780 000 000</a></li>
+            <li><span class="text-muted-2"><i class="bi bi-geo-alt me-2"></i>Kigali, Rwanda</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-big">DICKSON NIYONSHUTI</div>
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between gap-2">
+        <span>&copy; <span data-year>2026</span> Dickson Niyonshuti. All rights reserved.</span>
+        <span>Built with <i class="bi bi-heart-fill" style="color:var(--pink)"></i> using HTML5, CSS3 &amp; Bootstrap 5</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
