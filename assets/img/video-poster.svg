@@ -17,5 +17,5 @@
   <circle cx="800" cy="410" r="110" fill="url(#g)"/>
   <path d="M770 355v110l90-55z" fill="#fff"/>
   <text x="800" y="620" text-anchor="middle" font-family="Space Grotesk, Arial, sans-serif" font-size="58" font-weight="700" fill="#fff">Why I chose Software Engineering</text>
-  <text x="800" y="680" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="30" fill="#c7cbe6">A short story by Dickson Niyonshuti</text>
+  <text x="800" y="680" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="30" fill="#c7cbe6">A short story by Niyonshuti Dick Jameson</text>
 </svg>

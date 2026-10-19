@@ -217,7 +217,7 @@ section { position: relative; }
   border: 1px solid var(--border-strong); box-shadow: var(--glow);
   background: var(--bg-2);
 }
-.hero-photo img { width: 100%; height: 100%; object-fit: cover; }
+.hero-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center 12%; }
 .orbit { position: absolute; inset: 0; border: 1px dashed var(--border-strong); border-radius: 50%; animation: spin 40s linear infinite; }
 .orbit-2 { inset: -8%; animation-duration: 60s; animation-direction: reverse; opacity: .6; }
 .orbit .planet {
@@ -335,7 +335,7 @@ section { position: relative; }
 
 /* ---------- About ---------- */
 .profile-frame { position: relative; border-radius: 28px; padding: 10px; background: var(--grad); max-width: 420px; margin: 0 auto; }
-.profile-frame img { border-radius: 20px; width: 100%; aspect-ratio: 4/5; object-fit: cover; display: block; background: var(--bg-2); }
+.profile-frame img { border-radius: 20px; width: 100%; aspect-ratio: 4/5; object-fit: cover; object-position: center 20%; display: block; background: var(--bg-2); }
 .profile-frame .exp-badge {
   position: absolute; right: -18px; bottom: 34px; padding: 16px 20px; border-radius: 18px; text-align: center;
   background: var(--nav-bg); backdrop-filter: blur(14px); border: 1px solid var(--border-strong); box-shadow: var(--shadow);
@@ -532,6 +532,7 @@ main, .footer { overflow-x: clip; }
   .hero-sub { margin-inline: auto; }
   .hero-stats { justify-content: center; gap: 28px; }
   .hero .cta-row { justify-content: center; }
+  .hero-visual { width: min(340px, 82%); margin-top: 48px; }
   .float-badge.b1 { right: 0; }
   .float-badge.b2 { left: 0; }
 }

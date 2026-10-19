@@ -1,4 +1,4 @@
-# Dickson Niyonshuti — Personal Portfolio
+# Niyonshuti Dick Jameson — Personal Portfolio
 
 A modern, responsive, multi-page portfolio website built with **HTML5, CSS3 and Bootstrap 5** for the Mid-Semester Project.
 
@@ -12,7 +12,7 @@ A modern, responsive, multi-page portfolio website built with **HTML5, CSS3 and 
 | Home | `index.html` | Sticky glass navbar, animated hero with typing effect and CTA buttons, tech marquee, bento highlight cards (skills, current program, achievements), featured projects, CTA band, footer |
 | About Me | `about.html` | Biography with quick facts, education timeline, coursework table, animated skill progress bars, soft-skill rings, tool badges, interests & hobbies |
 | Gallery | `gallery.html` | **Self-motivation video** (HTML5 `<video>`) with caption, filterable photo grid with captions and a full-screen lightbox |
-| Contact | `contact.html` | Contact cards (university email, phone, address, personal email), LinkedIn/GitHub links, validated Bootstrap contact form, FAQ accordion, embedded Google Map |
+| Contact | `contact.html` | Contact cards (companies, phone, location, email), LinkedIn/GitHub links, validated Bootstrap contact form, FAQ accordion, embedded Google Map |
 
 ## Features
 
@@ -35,7 +35,7 @@ portfolio-website/
 ├── assets/
 │   ├── css/style.css
 │   ├── js/main.js
-│   ├── img/        (profile.svg, favicon.svg, video-poster.svg)
+│   ├── img/        (profile.webp, favicon.svg, video-poster.svg)
 │   └── video/      (put motivation.mp4 here)
 └── README.md
 ```
@@ -43,9 +43,9 @@ portfolio-website/
 ## Personalise before submitting
 
 1. **Video** — record your motivation video and save it as `assets/video/motivation.mp4` (or swap in the YouTube embed shown in the comment in `gallery.html`).
-2. **Photo** — replace `assets/img/profile.svg` with your own headshot (e.g. `profile.jpg`) and update the `src` in `index.html`, `about.html` and `gallery.html`.
+2. **Photo** — your portrait is `assets/img/profile.webp`; replace that file to change it everywhere.
 3. **Gallery images** — replace the stock photos in `gallery.html` with your own pictures (save them in `assets/img/`).
-4. **Details** — university, coursework, grades, phone number, address and social links (search for `+250 780 000 000`, `ur.ac.rw`, `github.com/`, `linkedin.com/`).
+4. **Details** — check coursework, grades and social links (search for `github.com/` and `linkedin.com/`).
 
 ## Deploying to GitHub Pages
 
@@ -63,4 +63,4 @@ Then on GitHub: **Settings → Pages → Build and deployment → Source: Deploy
 - Fonts: [Inter](https://fonts.google.com/specimen/Inter) and [Space Grotesk](https://fonts.google.com/specimen/Space+Grotesk)
 - Stock photos: [Unsplash](https://unsplash.com/)
 
-© 2026 Dickson Niyonshuti
+© 2026 Niyonshuti Dick Jameson
